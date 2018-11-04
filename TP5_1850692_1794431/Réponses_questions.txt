@@ -1,0 +1,15 @@
+RÉPONSES AUX QUESTIONS TP5 :
+1. L'avantage d'utiliser une liste au lieu d'un vecteur pour supprimer ou ajouter des 
+éléments est que cette dernière ne requiert aucun déplacement d'éléments. Autrement dit,
+une liste requiert tout simplement un réarrangement des pointeurs précédants/suivants des 
+éléments entourant l'objet à ajouter. Tandis qu'un vecteur requiert le parcours complet 
+de ses éléments pour décaler chaque élément suivant, afin de créer un nouvel 
+espace/supprimer un élément sans perdre l'ordre.
+Par contre, pour accèder à des éléments à des positions aléatoires il est plus avantageux
+de se servir d'un vecteur. Le vecteur surchange l'opérateur [] afin de permettre l'accès 
+rapide aux éléments. D'autre part, la liste nécessite le parcours du début jusqu'à un itérateur
+d'arrêt de ses éléments afin de trouver l'élément cherché (son pointeur corresspondant).
+
+2. Car lors de la compilation du code, le compilateur doit avoir accès à la fois à la
+définition et à l'implémentation en un fichier. De cette façon, il pourra créer des versions
+spécifiques de la classe selon les types rencontrés.

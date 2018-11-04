@@ -1,0 +1,12 @@
+Réponses aux questions
+
+    1 - Le lien entre la classe GroupImage et la classe Image est un lien d'agrégation.
+	La classe GroupeImage possède comme attribut un tableau dynamique d'image. Le
+    	tableau est initialisé avec des images vides dans le constructeur mais les images
+	composant le GroupeImage sont ajoutées par référence avec la fonction ajouterImage.
+	Ainsi, lorsqu'un objet de type GroupeImage est détruit, les objets de type Image
+	en attribut ne le sont pas.
+	
+    2 - Une méthode constante ne peut appeler que d'autres méthodes constantes. Elle ne peut
+	pas effectuer de modification sur les attributs de l'objet. Dans les deux cas si ce
+	n'est pas respecté, le compilateur retournera un message d'erreur.

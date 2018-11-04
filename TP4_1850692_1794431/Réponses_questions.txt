@@ -1,0 +1,21 @@
+Question TP4 – INF1010
+
+1 –  La classe Pixel possède des fonctions virtuelles pures qu’on définit par « =0 ». 
+Cela implique que la classe Pixel est une classe abstraite et qu’aucune instance d’objet 
+de cette classe ne peut exister.
+
+2 -  Ce sera « 0 » (false), car la surcharge de l’opérateur == dans le code permet de 
+comparer des Pixel. L’opérateur appel donc les fonctions retournerR(), retournerB() et 
+retournerG() qui dans le cas du PixelCouleur retournent respectivement les trois valeurs 
+de donnee_[]. Alors que celui du PixelBN retourne la valeur max ou min si, 
+respectivement, donnee_ est true ou false. Ainsi, il est possible de voir l’inégalité 
+entre les valeurs du PixelCouleur (20,30,50) et les valeurs (255,255,255) du PixelBN mis 
+à true. Cette réponse a été validée dans notre code.
+
+3- Oui(avec retournerR()), car le contenu du pointeur de type Pixel est un PixelCouleur 
+(une classe qui hérite de Pixel). En déréférençant le pointeur p1, on se trouve donc à 
+appeler la fonction redéfinie dans la classe PixelCouleur. Ainsi, le résultat de cette
+fonction est valide dans le cadre du TP4 si l'on utilise la méthode retournerR() (et non
+obtenirR()). Pour confirmer cette réponse, nous avons testé la ligne de code dans un 
+« cout » avec « to_string ()». Dans le TP4, la méthode obtenirR() n'existe pas, alors 
+normalement cet appel est invalide.

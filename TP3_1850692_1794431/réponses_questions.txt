@@ -1,0 +1,14 @@
+RÉPONSES AUX QUESTIONS-TP3 
+1. Il est logique de dériver une classe PixelCouleur d'une classe Pixel car la classe Pixel englobe tous les 
+différents types de pixels qui existent. Ceci permet, entre-autres de vérifier le type d'un pixel, ce qui
+facilite l'utilisation des fonctions de conversion. 
+
+2. Non il n'est pas possible d'assigner des PixelCouleur à des variables de type Pixel, car Pixel n'hérite pas
+de la classe PixelCouleur. Les variables p1 et p2 n'ont donc pas accès aux constructeurs de PixelCouleur.
+b aura la valeur 'True', car à la déclaration de p1 et p2, le constructeur par défaut de Pixel a été appelé. 
+Comme expliqué ci-haut, les constructeurs par paramètres de PixelCouleur n'ont pas été appelés. Alors, p1 et
+p2 sont tous deux initiés aux valeurs du constructeur par défaut de Pixel.
+
+3. Le static_cast est utilisé afin de prévenir au compilateur que l'objet qu'on traite devra accéder aux méthodes
+de la classe entre crochets. Cependant, la classe à laquelle on veut accéder doit hériter de la classe de 
+l'objet. 
